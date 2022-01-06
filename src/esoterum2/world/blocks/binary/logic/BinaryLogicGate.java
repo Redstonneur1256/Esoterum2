@@ -1,11 +1,10 @@
 package esoterum2.world.blocks.binary.logic;
 
-import arc.func.*;
 import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.scene.ui.layout.*;
 import arc.util.io.*;
-import esoterum2.*;
+import esoterum2.util.IntBoolf;
 import esoterum2.world.blocks.binary.*;
 import mindustry.gen.*;
 
@@ -14,7 +13,7 @@ public class BinaryLogicGate extends BinaryBlock{
     //accepts Integer instead of boolean[] to prevent this hypothetical scenario
     //i[0] && !i[1]
     //input order shouldn't matter
-    public Boolf<Integer> operation;
+    public IntBoolf operation;
     public boolean single;
     //Logic gates are the only block that can create an infinite on-off loop
     //So I implement this only for them
